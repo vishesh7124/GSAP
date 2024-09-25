@@ -11,7 +11,9 @@ gsap.to("#box1",{
     rotate:360,
     backgroundColor:"white",
     borderRadius:"200px",
-    scale:0.2
+    scale:0.2,
+    repeat:2, // repeats n+1 times , infinite if -1
+    yoyo:true,
 })
 
 // gsap.to("#box2",{
@@ -29,4 +31,13 @@ gsap.from("#box2",{
     y:100,
     duration:2,
     delay:1,
+})
+
+gsap.from("h1",{
+    opacity:0,
+    y:50,
+    duration:2,
+    delay:1,
+    // stagger:0.5 // used to animate objects one by one , delay time passed in it
+    stagger: -0.5, // in reverse
 })

@@ -92,44 +92,59 @@
 //     } // animation will trigger on scrolling to that element
 // })
 
-gsap.from("#page2 h1",{
-    opacity:0,
-    duration:1,
-    x:500,
-    scrollTrigger:{
-        trigger:"#page2 h1",
-        scroller:"body",
-        // markers:true,
-        start:"top 50%"
-    }
+// gsap.from("#page2 h1",{
+//     opacity:0,
+//     duration:1,
+//     x:500,
+//     scrollTrigger:{
+//         trigger:"#page2 h1",
+//         scroller:"body",
+//         // markers:true,
+//         start:"top 50%"
+//     }
 
-})
-gsap.from("#page2 h2",{
-    opacity:0,
+// })
+// gsap.from("#page2 h2",{
+//     opacity:0,
+//     duration:2,
+//     x:-500,
+//     scrollTrigger:{
+//         trigger:"#page2 h2",
+//         scroller:"body",
+//         // markers:true,
+//         start:"top 50%",
+//     }
+
+// })
+// gsap.from("#page2 .box",{
+//     scale:0,
+//     opacity:0,
+//     duration:1,
+//     rotate:720,
+//     scrollTrigger:{
+//         trigger:"#page2 .box",
+//         scroller:"body",
+//         markers:true,
+//         start:"top 60%",
+//         end:"top 30%",
+//         // scrub:true // for animation flow according to scroll
+//         scrub : 2, // value for smooth animation
+//         pin:true,
+//     }
+// })
+
+
+gsap.to("#page2 h1",{
+    transform: "translateX(-150%)",
     duration:2,
-    x:-500,
     scrollTrigger:{
-        trigger:"#page2 h2",
+        trigger:"#page2", // whenever we use pin , we trigger the parent element
         scroller:"body",
         // markers:true,
-        start:"top 50%"
-    }
+        start:"top 0%",
+        end:"top -150%",
+        scrub:2,
+        pin:true
 
-})
-gsap.from("#page2 .box",{
-    scale:0,
-    opacity:0,
-    duration:1,
-    rotate:720,
-    scrollTrigger:{
-        trigger:"#page2 .box",
-        scroller:"body",
-        markers:true,
-        start:"top 60%",
-        end:"top 30%",
-        // scrub:true // for animation flow according to scroll
-        scrub : 2, // value for smooth animation
-        pin:true,
     }
 })
-

@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: gilroy;
-    color: white;
+    color: black;
 }
 
 h1{
@@ -13,12 +13,13 @@ h1{
 html,body{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 #page1{
     height: 100%;
     width: 100%;
-    background-color: lightblue;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,9 +30,10 @@ html,body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 50px;
-    background-color: rgb(64, 133, 194);
+    background-color: rgb(143, 210, 255);
+    padding: 20px 0;
 }
 #page3{
     height: 100%;
@@ -39,19 +41,7 @@ html,body{
     background-color: rgb(19, 34, 168);
 }
 
-.box{
-    height: 300px;
-    width:  300px;
-    background: crimson;
-}
-
-h1{
-    font-size: 60px;
-    position: relative;
-    background-color: red;
-}
-h2{
-    font-size: 40px;
-    position: relative;
-    background-color: yellow;
+#page2 h1{
+    font-size: 40vw;
+    text-transform: uppercase;
 }

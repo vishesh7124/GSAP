@@ -15,22 +15,43 @@ html,body{
     width: 100%;
 }
 
-body{
-    background: black;
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(64, 133, 194);
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(19, 34, 168);
 }
 
 .box{
     height: 300px;
-    width: 300px;
-    border-radius: 10px;
-}
-
-#box1{
-    
+    width:  300px;
     background: crimson;
 }
 
-#box2{
-    background: limegreen;
-
+h1{
+    font-size: 60px;
+    position: relative;
+    background-color: red;
+}
+h2{
+    font-size: 40px;
+    position: relative;
+    background-color: yellow;
 }
